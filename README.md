@@ -6,6 +6,8 @@ Orquestación de detección de phishing por correo con LangGraph, un LLM local s
 
 ## Arquitectura
 
+![Graph Diagram](Docs/flow.png)
+
 1. `imap_source.py`: escucha cambios IMAP con IDLE, busca mensajes no leídos y obtiene el RFC822.
 2. `normalization.py`: extrae cabeceras, texto, HTML convertido a texto y URLs.
 3. `repository.py`: guarda mensajes, resultados, trabajos y auditoría en SQLite.
